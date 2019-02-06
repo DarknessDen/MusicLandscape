@@ -1,0 +1,693 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>52/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 06 20:30:41 YEKT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (414 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='MusicLandscape.tests.ArtistTest.checkInterface()'><b>checkInterface</b><br>Test class: MusicLandscape.tests.ArtistTest<br>Test method: checks if Artist implements interface</td>
+<td><div><pre>java.lang.AssertionError: the class should implement the interface  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at MusicLandscape.tests.ArtistTest.checkInterface(ArtistTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace764372388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace764372388'><pre>java.lang.AssertionError: the class should implement the interface  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at MusicLandscape.tests.ArtistTest.checkInterface(ArtistTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>MusicLandscape.tests.ArtistTest@4501b7af</td></tr>
+<tr>
+<td title='MusicLandscape.tests.ShortTrackFormatterTest.formatLongTrack()'><b>formatLongTrack</b><br>Test class: MusicLandscape.tests.ShortTrackFormatterTest<br>Test method: checks format of a track with a long title using format()</td>
+<td><div><pre>java.lang.AssertionError: Strings should be equal expected [Ain&apos;t No S (06:00)] but found [unknown(6:0)]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.formatLongTrack(ShortTrackFormatterTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1468357786", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1468357786'><pre>java.lang.AssertionError: Strings should be equal expected [Ain&apos;t No S (06:00)] but found [unknown(6:0)]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.formatLongTrack(ShortTrackFormatterTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8</td></tr>
+<tr>
+<td title='MusicLandscape.tests.ShortTrackFormatterTest.formatShortTrack()'><b>formatShortTrack</b><br>Test class: MusicLandscape.tests.ShortTrackFormatterTest<br>Test method: formats a track with a short title using format()</td>
+<td><div><pre>java.lang.AssertionError: Strings should be equal expected [Daylight   (02:03)] but found [unknown(2:3)]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.formatShortTrack(ShortTrackFormatterTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1675763772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1675763772'><pre>java.lang.AssertionError: Strings should be equal expected [Daylight   (02:03)] but found [unknown(2:3)]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.formatShortTrack(ShortTrackFormatterTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8</td></tr>
+<tr>
+<td title='MusicLandscape.tests.ShortTrackFormatterTest.header()'><b>header</b><br>Test class: MusicLandscape.tests.ShortTrackFormatterTest<br>Test method: checks return value of header()</td>
+<td><div><pre>java.lang.AssertionError: header() should return another value expected [Title      (min:sec)] but found [Title    (min:sec)]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.header(ShortTrackFormatterTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1924582348", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1924582348'><pre>java.lang.AssertionError: header() should return another value expected [Title      (min:sec)] but found [Title    (min:sec)]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.header(ShortTrackFormatterTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8</td></tr>
+<tr>
+<td title='MusicLandscape.tests.ShortTrackFormatterTest.topSeparator()'><b>topSeparator</b><br>Test class: MusicLandscape.tests.ShortTrackFormatterTest<br>Test method: checks return value of topSeparator()</td>
+<td><div><pre>java.lang.AssertionError: topSeparator() should return another value expected [--------------------] but found [----------------------]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.topSeparator(ShortTrackFormatterTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1270855946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1270855946'><pre>java.lang.AssertionError: topSeparator() should return another value expected [--------------------] but found [----------------------]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.topSeparator(ShortTrackFormatterTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='MusicLandscape.tests.DurationMatcherTest.DurationMatcher()'><b>DurationMatcher</b><br>Test class: MusicLandscape.tests.DurationMatcherTest<br>Test method: tests the constructor of DurationMatcher without arguments</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationMatcherTest@523884b2</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationMatcherTest.DurationMatcherString()'><b>DurationMatcherString</b><br>Test class: MusicLandscape.tests.DurationMatcherTest<br>Test method: tests the cosntructor which takes a pattern as String with value "2 5"</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationMatcherTest@523884b2</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.MyTrackContainer()'><b>MyTrackContainer</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: checks if initial datatypes are correct</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.MyTrackContainerIterableTrack()'><b>MyTrackContainerIterableTrack</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: checks if initial length of tracks and selection is correct with a List<Track> of 3 tracks</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.MyTrackContainerTrack()'><b>MyTrackContainerTrack</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: checks if initial lenght of tracks and selection is correct with a Track[] of 3 tracks</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleMatcherTest.TitleMatcher()'><b>TitleMatcher</b><br>Test class: MusicLandscape.tests.TitleMatcherTest<br>Test method: checks initial value of TitleMatcher with constructor TitleMatcher ("my")</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleMatcherTest@29774679</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.add()'><b>add</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: test to add the same track twice as well as a null track</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.addAll()'><b>addAll</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: test to add an array with 3 track to the tracks</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.ShortTrackFormatterTest.checkInterface()'><b>checkInterface</b><br>Test class: MusicLandscape.tests.ShortTrackFormatterTest<br>Test method: checks if ShortTrackFormatter implements correct interface</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationComparatorTest.checkType()'><b>checkType</b><br>Test class: MusicLandscape.tests.DurationComparatorTest<br>Test method: checks if the interface java.util.Comparator has been used</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationComparatorTest@224edc67</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleComparatorTest.checkType()'><b>checkType</b><br>Test class: MusicLandscape.tests.TitleComparatorTest<br>Test method: checks if the interface java.util.Comparator has been used</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleComparatorTest@5b275dab</td></tr>
+<tr>
+<td title='MusicLandscape.tests.WriterComparatorTest.checkType()'><b>checkType</b><br>Test class: MusicLandscape.tests.WriterComparatorTest<br>Test method: checks if the interface java.util.Comparator has been used</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.WriterComparatorTest@61832929</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationComparatorTest.compare()'><b>compare</b><br>Test class: MusicLandscape.tests.DurationComparatorTest<br>Test method: checks if comparison is done correctly <br>Parameters: 60, 60, 0</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationComparatorTest@224edc67</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationComparatorTest.compare()'><b>compare</b><br>Test class: MusicLandscape.tests.DurationComparatorTest<br>Test method: checks if comparison is done correctly <br>Parameters: 120, 60, 60</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationComparatorTest@224edc67</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationComparatorTest.compare()'><b>compare</b><br>Test class: MusicLandscape.tests.DurationComparatorTest<br>Test method: checks if comparison is done correctly <br>Parameters: 60, 120, -60</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationComparatorTest@224edc67</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleComparatorTest.compare()'><b>compare</b><br>Test class: MusicLandscape.tests.TitleComparatorTest<br>Parameters: same, same, 0</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleComparatorTest@5b275dab</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleComparatorTest.compare()'><b>compare</b><br>Test class: MusicLandscape.tests.TitleComparatorTest<br>Parameters: same, other, 4</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleComparatorTest@5b275dab</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleComparatorTest.compare()'><b>compare</b><br>Test class: MusicLandscape.tests.TitleComparatorTest<br>Parameters: other, same, -4</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleComparatorTest@5b275dab</td></tr>
+<tr>
+<td title='MusicLandscape.tests.WriterComparatorTest.compare()'><b>compare</b><br>Test class: MusicLandscape.tests.WriterComparatorTest<br>Parameters: same, same, 0</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.WriterComparatorTest@61832929</td></tr>
+<tr>
+<td title='MusicLandscape.tests.WriterComparatorTest.compare()'><b>compare</b><br>Test class: MusicLandscape.tests.WriterComparatorTest<br>Parameters: same, other, 4</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.WriterComparatorTest@61832929</td></tr>
+<tr>
+<td title='MusicLandscape.tests.WriterComparatorTest.compare()'><b>compare</b><br>Test class: MusicLandscape.tests.WriterComparatorTest<br>Parameters: other, same, -4</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.WriterComparatorTest@61832929</td></tr>
+<tr>
+<td title='MusicLandscape.tests.ArtistTest.compareTo()'><b>compareTo</b><br>Test class: MusicLandscape.tests.ArtistTest<br>Test method: checks if comparison is done lexicographically<br>Parameters: same, same, 0</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.ArtistTest@4501b7af</td></tr>
+<tr>
+<td title='MusicLandscape.tests.ArtistTest.compareTo()'><b>compareTo</b><br>Test class: MusicLandscape.tests.ArtistTest<br>Test method: checks if comparison is done lexicographically<br>Parameters: same, other, 4</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.ArtistTest@4501b7af</td></tr>
+<tr>
+<td title='MusicLandscape.tests.ArtistTest.compareTo()'><b>compareTo</b><br>Test class: MusicLandscape.tests.ArtistTest<br>Test method: checks if comparison is done lexicographically<br>Parameters: other, same, -4</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.ArtistTest@4501b7af</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.filter()'><b>filter</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: test filter method using the title matcher with pattern "t" or "Spe" </td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationMatcherTest.getPattern()'><b>getPattern</b><br>Test class: MusicLandscape.tests.DurationMatcherTest<br>Test method: test the return value of getPattern()</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationMatcherTest@523884b2</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleMatcherTest.getPattern()'><b>getPattern</b><br>Test class: MusicLandscape.tests.TitleMatcherTest<br>Test method: checks return value of getPattern()</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleMatcherTest@29774679</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationMatcherTest.matches()'><b>matches</b><br>Test class: MusicLandscape.tests.DurationMatcherTest<br>Test method: requires setPattern works! checks if matching is done correctly. first argument: druations of track, second: pattern to match, third: awaited result<br>Parameters: 0, 0 0, true</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationMatcherTest@523884b2</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationMatcherTest.matches()'><b>matches</b><br>Test class: MusicLandscape.tests.DurationMatcherTest<br>Test method: requires setPattern works! checks if matching is done correctly. first argument: druations of track, second: pattern to match, third: awaited result<br>Parameters: 120, 0 0, false</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationMatcherTest@523884b2</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationMatcherTest.matches()'><b>matches</b><br>Test class: MusicLandscape.tests.DurationMatcherTest<br>Test method: requires setPattern works! checks if matching is done correctly. first argument: druations of track, second: pattern to match, third: awaited result<br>Parameters: 120, 0 300, true</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationMatcherTest@523884b2</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleMatcherTest.matches()'><b>matches</b><br>Test class: MusicLandscape.tests.TitleMatcherTest<br>Test method: requires setPattern is working! checks match results, arguments: 1.=tracktitle, 2.=pattern, 3.=expected result<br>Parameters: my oh my, my, true</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleMatcherTest@29774679</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleMatcherTest.matches()'><b>matches</b><br>Test class: MusicLandscape.tests.TitleMatcherTest<br>Test method: requires setPattern is working! checks match results, arguments: 1.=tracktitle, 2.=pattern, 3.=expected result<br>Parameters: music is my life, my, false</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleMatcherTest@29774679</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleMatcherTest.matches()'><b>matches</b><br>Test class: MusicLandscape.tests.TitleMatcherTest<br>Test method: requires setPattern is working! checks match results, arguments: 1.=tracktitle, 2.=pattern, 3.=expected result<br>Parameters: any title, , true</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleMatcherTest@29774679</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.remove()'><b>remove</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: check remove() for filtered selection (all available Tracks)</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.removeAll()'><b>removeAll</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: check remove() for complete selection (all available Tracks)</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.reset()'><b>reset</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: check reset() after adding new Tracks</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.selection()'><b>selection</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: checks return value of selection() with an empty selection</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.selectionInit()'><b>selectionInit</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: checks return value of selection() with an empty selection</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationMatcherTest.setPattern()'><b>setPattern</b><br>Test class: MusicLandscape.tests.DurationMatcherTest<br>Test method: sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in)<br>Parameters: 1 200, 1, 200</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationMatcherTest@523884b2</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationMatcherTest.setPattern()'><b>setPattern</b><br>Test class: MusicLandscape.tests.DurationMatcherTest<br>Test method: sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in)<br>Parameters: incorr string, 0, 2147483647</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationMatcherTest@523884b2</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationMatcherTest.setPattern()'><b>setPattern</b><br>Test class: MusicLandscape.tests.DurationMatcherTest<br>Test method: sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in)<br>Parameters: 15 2, 15, 2147483647</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationMatcherTest@523884b2</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationMatcherTest.setPattern()'><b>setPattern</b><br>Test class: MusicLandscape.tests.DurationMatcherTest<br>Test method: sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in)<br>Parameters: 15 15, 15, 15</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationMatcherTest@523884b2</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleMatcherTest.setPatternAny()'><b>setPatternAny</b><br>Test class: MusicLandscape.tests.TitleMatcherTest<br>Test method: tries to set a valid pattern - music</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleMatcherTest@29774679</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleMatcherTest.setPatternNull()'><b>setPatternNull</b><br>Test class: MusicLandscape.tests.TitleMatcherTest<br>Test method: tries to set a null pattern</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleMatcherTest@29774679</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.size()'><b>size</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: check size() after removing Track from selection to make sure it returns size of tracks not of selection</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.MyTrackContainerTest.sort()'><b>sort</b><br>Test class: MusicLandscape.tests.MyTrackContainerTest<br>Test method: sorts the selection by a given Comparator (by duration in this case)</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.MyTrackContainerTest@14acaea5</td></tr>
+<tr>
+<td title='MusicLandscape.tests.ShortTrackFormatterTest.testtoString()'><b>testtoString</b><br>Test class: MusicLandscape.tests.ShortTrackFormatterTest<br>Test method: checks return value of toString()</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationComparatorTest.testtoString()'><b>testtoString</b><br>Test class: MusicLandscape.tests.DurationComparatorTest<br>Test method: checks return value of toString</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationComparatorTest@224edc67</td></tr>
+<tr>
+<td title='MusicLandscape.tests.DurationMatcherTest.testtoString()'><b>testtoString</b><br>Test class: MusicLandscape.tests.DurationMatcherTest</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.DurationMatcherTest@523884b2</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleComparatorTest.testtoString()'><b>testtoString</b><br>Test class: MusicLandscape.tests.TitleComparatorTest<br>Test method: checks return value of toString</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleComparatorTest@5b275dab</td></tr>
+<tr>
+<td title='MusicLandscape.tests.TitleMatcherTest.testtoString()'><b>testtoString</b><br>Test class: MusicLandscape.tests.TitleMatcherTest</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.TitleMatcherTest@29774679</td></tr>
+<tr>
+<td title='MusicLandscape.tests.WriterComparatorTest.testtoString()'><b>testtoString</b><br>Test class: MusicLandscape.tests.WriterComparatorTest<br>Test method: checks return value of toString</td>
+<td></td>
+<td>0</td>
+<td>MusicLandscape.tests.WriterComparatorTest@61832929</td></tr>
+</table><p>
+</body>
+</html>

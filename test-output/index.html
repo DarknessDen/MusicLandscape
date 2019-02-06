@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\Денис\AppData\Local\Temp\testng-eclipse--1479975771\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">57 methods, 5 failed,   52 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.ArtistTest" hash-for-method="checkInterface">checkInterface</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.ShortTrackFormatterTest" hash-for-method="formatLongTrack">formatLongTrack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.ShortTrackFormatterTest" hash-for-method="formatShortTrack">formatShortTrack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.ShortTrackFormatterTest" hash-for-method="header">header</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.ShortTrackFormatterTest" hash-for-method="topSeparator">topSeparator</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationMatcherTest" hash-for-method="DurationMatcher">DurationMatcher</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationMatcherTest" hash-for-method="DurationMatcherString">DurationMatcherString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="MyTrackContainer">MyTrackContainer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="MyTrackContainerIterableTrack">MyTrackContainerIterableTrack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="MyTrackContainerTrack">MyTrackContainerTrack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleMatcherTest" hash-for-method="TitleMatcher">TitleMatcher</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="add">add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="addAll">addAll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.ShortTrackFormatterTest" hash-for-method="checkInterface">checkInterface</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.WriterComparatorTest" hash-for-method="checkType">checkType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationComparatorTest" hash-for-method="checkType">checkType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleComparatorTest" hash-for-method="checkType">checkType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleComparatorTest" hash-for-method="compare(other, same, -4)">compare(other, same, -4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleComparatorTest" hash-for-method="compare(same, same, 0)">compare(same, same, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleComparatorTest" hash-for-method="compare(same, other, 4)">compare(same, other, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.WriterComparatorTest" hash-for-method="compare(same, same, 0)">compare(same, same, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.WriterComparatorTest" hash-for-method="compare(other, same, -4)">compare(other, same, -4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationComparatorTest" hash-for-method="compare(120, 60, 60)">compare(120, 60, 60)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.WriterComparatorTest" hash-for-method="compare(same, other, 4)">compare(same, other, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationComparatorTest" hash-for-method="compare(60, 120, -60)">compare(60, 120, -60)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationComparatorTest" hash-for-method="compare(60, 60, 0)">compare(60, 60, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.ArtistTest" hash-for-method="compareTo(other, same, -4)">compareTo(other, same, -4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.ArtistTest" hash-for-method="compareTo(same, other, 4)">compareTo(same, other, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.ArtistTest" hash-for-method="compareTo(same, same, 0)">compareTo(same, same, 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="filter">filter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationMatcherTest" hash-for-method="getPattern">getPattern</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleMatcherTest" hash-for-method="getPattern">getPattern</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationMatcherTest" hash-for-method="matches(120, 0 300, true)">matches(120, 0 300, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleMatcherTest" hash-for-method="matches(any title, , true)">matches(any title, , true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleMatcherTest" hash-for-method="matches(my oh my, my, true)">matches(my oh my, my, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleMatcherTest" hash-for-method="matches(music is my life, my, false)">matches(music is my life, my, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationMatcherTest" hash-for-method="matches(0, 0 0, true)">matches(0, 0 0, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationMatcherTest" hash-for-method="matches(120, 0 0, false)">matches(120, 0 0, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="remove">remove</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="removeAll">removeAll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="reset">reset</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="selection">selection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="selectionInit">selectionInit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationMatcherTest" hash-for-method="setPattern(incorr string, 0, 2147483647)">setPattern(incorr string, 0, 2147483647)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationMatcherTest" hash-for-method="setPattern(15 15, 15, 15)">setPattern(15 15, 15, 15)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationMatcherTest" hash-for-method="setPattern(1 200, 1, 200)">setPattern(1 200, 1, 200)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationMatcherTest" hash-for-method="setPattern(15 2, 15, 2147483647)">setPattern(15 2, 15, 2147483647)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleMatcherTest" hash-for-method="setPatternAny">setPatternAny</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleMatcherTest" hash-for-method="setPatternNull">setPatternNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="size">size</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.MyTrackContainerTest" hash-for-method="sort">sort</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleMatcherTest" hash-for-method="testtoString">testtoString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationComparatorTest" hash-for-method="testtoString">testtoString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.TitleComparatorTest" hash-for-method="testtoString">testtoString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.WriterComparatorTest" hash-for-method="testtoString">testtoString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.DurationMatcherTest" hash-for-method="testtoString">testtoString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="MusicLandscape.tests.ShortTrackFormatterTest" hash-for-method="testtoString">testtoString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">MusicLandscape.tests.ShortTrackFormatterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="formatLongTrack">
+                  </a> <!-- formatLongTrack -->
+                  <span class="method-name">formatLongTrack</span>
+                  <div class="stack-trace">java.lang.AssertionError: Strings should be equal expected [Ain&apos;t No S (06:00)] but found [unknown(6:0)]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.formatLongTrack(ShortTrackFormatterTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(checks format of a track with a long title using format())                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="formatShortTrack">
+                  </a> <!-- formatShortTrack -->
+                  <span class="method-name">formatShortTrack</span>
+                  <div class="stack-trace">java.lang.AssertionError: Strings should be equal expected [Daylight   (02:03)] but found [unknown(2:3)]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.formatShortTrack(ShortTrackFormatterTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(formats a track with a short title using format())                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="header">
+                  </a> <!-- header -->
+                  <span class="method-name">header</span>
+                  <div class="stack-trace">java.lang.AssertionError: header() should return another value expected [Title      (min:sec)] but found [Title    (min:sec)]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.header(ShortTrackFormatterTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(checks return value of header())                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="topSeparator">
+                  </a> <!-- topSeparator -->
+                  <span class="method-name">topSeparator</span>
+                  <div class="stack-trace">java.lang.AssertionError: topSeparator() should return another value expected [--------------------] but found [----------------------]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at MusicLandscape.tests.ShortTrackFormatterTest.topSeparator(ShortTrackFormatterTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(checks return value of topSeparator())                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">MusicLandscape.tests.ArtistTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkInterface">
+                  </a> <!-- checkInterface -->
+                  <span class="method-name">checkInterface</span>
+                  <div class="stack-trace">java.lang.AssertionError: the class should implement the interface  expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at MusicLandscape.tests.ArtistTest.checkInterface(ArtistTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(checks if Artist implements interface)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MusicLandscape.tests.DurationMatcherTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DurationMatcher">
+                  </a> <!-- DurationMatcher -->
+                  <span class="method-name">DurationMatcher</span>
+                  <em>
+(tests the constructor of DurationMatcher without arguments)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DurationMatcherString">
+                  </a> <!-- DurationMatcherString -->
+                  <span class="method-name">DurationMatcherString</span>
+                  <em>
+(tests the cosntructor which takes a pattern as String with value "2 5")                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPattern">
+                  </a> <!-- getPattern -->
+                  <span class="method-name">getPattern</span>
+                  <em>
+(test the return value of getPattern())                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="matches(120, 0 300, true)">
+                  </a> <!-- matches(120, 0 300, true) -->
+                  <span class="method-name">matches</span>
+                  <span class="parameters">(120, 0 300, true)</span>
+                  <em>
+(requires setPattern works! checks if matching is done correctly. first argument: druations of track, second: pattern to match, third: awaited result)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="matches(0, 0 0, true)">
+                  </a> <!-- matches(0, 0 0, true) -->
+                  <span class="method-name">matches</span>
+                  <span class="parameters">(0, 0 0, true)</span>
+                  <em>
+(requires setPattern works! checks if matching is done correctly. first argument: druations of track, second: pattern to match, third: awaited result)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="matches(120, 0 0, false)">
+                  </a> <!-- matches(120, 0 0, false) -->
+                  <span class="method-name">matches</span>
+                  <span class="parameters">(120, 0 0, false)</span>
+                  <em>
+(requires setPattern works! checks if matching is done correctly. first argument: druations of track, second: pattern to match, third: awaited result)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPattern(incorr string, 0, 2147483647)">
+                  </a> <!-- setPattern(incorr string, 0, 2147483647) -->
+                  <span class="method-name">setPattern</span>
+                  <span class="parameters">(incorr string, 0, 2147483647)</span>
+                  <em>
+(sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPattern(15 15, 15, 15)">
+                  </a> <!-- setPattern(15 15, 15, 15) -->
+                  <span class="method-name">setPattern</span>
+                  <span class="parameters">(15 15, 15, 15)</span>
+                  <em>
+(sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPattern(1 200, 1, 200)">
+                  </a> <!-- setPattern(1 200, 1, 200) -->
+                  <span class="method-name">setPattern</span>
+                  <span class="parameters">(1 200, 1, 200)</span>
+                  <em>
+(sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPattern(15 2, 15, 2147483647)">
+                  </a> <!-- setPattern(15 2, 15, 2147483647) -->
+                  <span class="method-name">setPattern</span>
+                  <span class="parameters">(15 2, 15, 2147483647)</span>
+                  <em>
+(sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testtoString">
+                  </a> <!-- testtoString -->
+                  <span class="method-name">testtoString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MusicLandscape.tests.DurationComparatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkType">
+                  </a> <!-- checkType -->
+                  <span class="method-name">checkType</span>
+                  <em>
+(checks if the interface java.util.Comparator has been used)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compare(120, 60, 60)">
+                  </a> <!-- compare(120, 60, 60) -->
+                  <span class="method-name">compare</span>
+                  <span class="parameters">(120, 60, 60)</span>
+                  <em>
+(checks if comparison is done correctly )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compare(60, 120, -60)">
+                  </a> <!-- compare(60, 120, -60) -->
+                  <span class="method-name">compare</span>
+                  <span class="parameters">(60, 120, -60)</span>
+                  <em>
+(checks if comparison is done correctly )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compare(60, 60, 0)">
+                  </a> <!-- compare(60, 60, 0) -->
+                  <span class="method-name">compare</span>
+                  <span class="parameters">(60, 60, 0)</span>
+                  <em>
+(checks if comparison is done correctly )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testtoString">
+                  </a> <!-- testtoString -->
+                  <span class="method-name">testtoString</span>
+                  <em>
+(checks return value of toString)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MusicLandscape.tests.ShortTrackFormatterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkInterface">
+                  </a> <!-- checkInterface -->
+                  <span class="method-name">checkInterface</span>
+                  <em>
+(checks if ShortTrackFormatter implements correct interface)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testtoString">
+                  </a> <!-- testtoString -->
+                  <span class="method-name">testtoString</span>
+                  <em>
+(checks return value of toString())                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MusicLandscape.tests.MyTrackContainerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyTrackContainer">
+                  </a> <!-- MyTrackContainer -->
+                  <span class="method-name">MyTrackContainer</span>
+                  <em>
+(checks if initial datatypes are correct)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyTrackContainerIterableTrack">
+                  </a> <!-- MyTrackContainerIterableTrack -->
+                  <span class="method-name">MyTrackContainerIterableTrack</span>
+                  <em>
+(checks if initial length of tracks and selection is correct with a List<Track> of 3 tracks)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyTrackContainerTrack">
+                  </a> <!-- MyTrackContainerTrack -->
+                  <span class="method-name">MyTrackContainerTrack</span>
+                  <em>
+(checks if initial lenght of tracks and selection is correct with a Track[] of 3 tracks)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                  <em>
+(test to add the same track twice as well as a null track)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addAll">
+                  </a> <!-- addAll -->
+                  <span class="method-name">addAll</span>
+                  <em>
+(test to add an array with 3 track to the tracks)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filter">
+                  </a> <!-- filter -->
+                  <span class="method-name">filter</span>
+                  <em>
+(test filter method using the title matcher with pattern "t" or "Spe" )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="remove">
+                  </a> <!-- remove -->
+                  <span class="method-name">remove</span>
+                  <em>
+(check remove() for filtered selection (all available Tracks))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeAll">
+                  </a> <!-- removeAll -->
+                  <span class="method-name">removeAll</span>
+                  <em>
+(check remove() for complete selection (all available Tracks))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reset">
+                  </a> <!-- reset -->
+                  <span class="method-name">reset</span>
+                  <em>
+(check reset() after adding new Tracks)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selection">
+                  </a> <!-- selection -->
+                  <span class="method-name">selection</span>
+                  <em>
+(checks return value of selection() with an empty selection)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectionInit">
+                  </a> <!-- selectionInit -->
+                  <span class="method-name">selectionInit</span>
+                  <em>
+(checks return value of selection() with an empty selection)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="size">
+                  </a> <!-- size -->
+                  <span class="method-name">size</span>
+                  <em>
+(check size() after removing Track from selection to make sure it returns size of tracks not of selection)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sort">
+                  </a> <!-- sort -->
+                  <span class="method-name">sort</span>
+                  <em>
+(sorts the selection by a given Comparator (by duration in this case))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MusicLandscape.tests.ArtistTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareTo(other, same, -4)">
+                  </a> <!-- compareTo(other, same, -4) -->
+                  <span class="method-name">compareTo</span>
+                  <span class="parameters">(other, same, -4)</span>
+                  <em>
+(checks if comparison is done lexicographically)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareTo(same, other, 4)">
+                  </a> <!-- compareTo(same, other, 4) -->
+                  <span class="method-name">compareTo</span>
+                  <span class="parameters">(same, other, 4)</span>
+                  <em>
+(checks if comparison is done lexicographically)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareTo(same, same, 0)">
+                  </a> <!-- compareTo(same, same, 0) -->
+                  <span class="method-name">compareTo</span>
+                  <span class="parameters">(same, same, 0)</span>
+                  <em>
+(checks if comparison is done lexicographically)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MusicLandscape.tests.WriterComparatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkType">
+                  </a> <!-- checkType -->
+                  <span class="method-name">checkType</span>
+                  <em>
+(checks if the interface java.util.Comparator has been used)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compare(same, same, 0)">
+                  </a> <!-- compare(same, same, 0) -->
+                  <span class="method-name">compare</span>
+                  <span class="parameters">(same, same, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compare(other, same, -4)">
+                  </a> <!-- compare(other, same, -4) -->
+                  <span class="method-name">compare</span>
+                  <span class="parameters">(other, same, -4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compare(same, other, 4)">
+                  </a> <!-- compare(same, other, 4) -->
+                  <span class="method-name">compare</span>
+                  <span class="parameters">(same, other, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testtoString">
+                  </a> <!-- testtoString -->
+                  <span class="method-name">testtoString</span>
+                  <em>
+(checks return value of toString)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MusicLandscape.tests.TitleComparatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkType">
+                  </a> <!-- checkType -->
+                  <span class="method-name">checkType</span>
+                  <em>
+(checks if the interface java.util.Comparator has been used)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compare(other, same, -4)">
+                  </a> <!-- compare(other, same, -4) -->
+                  <span class="method-name">compare</span>
+                  <span class="parameters">(other, same, -4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compare(same, same, 0)">
+                  </a> <!-- compare(same, same, 0) -->
+                  <span class="method-name">compare</span>
+                  <span class="parameters">(same, same, 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compare(same, other, 4)">
+                  </a> <!-- compare(same, other, 4) -->
+                  <span class="method-name">compare</span>
+                  <span class="parameters">(same, other, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testtoString">
+                  </a> <!-- testtoString -->
+                  <span class="method-name">testtoString</span>
+                  <em>
+(checks return value of toString)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MusicLandscape.tests.TitleMatcherTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TitleMatcher">
+                  </a> <!-- TitleMatcher -->
+                  <span class="method-name">TitleMatcher</span>
+                  <em>
+(checks initial value of TitleMatcher with constructor TitleMatcher ("my"))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPattern">
+                  </a> <!-- getPattern -->
+                  <span class="method-name">getPattern</span>
+                  <em>
+(checks return value of getPattern())                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="matches(any title, , true)">
+                  </a> <!-- matches(any title, , true) -->
+                  <span class="method-name">matches</span>
+                  <span class="parameters">(any title, , true)</span>
+                  <em>
+(requires setPattern is working! checks match results, arguments: 1.=tracktitle, 2.=pattern, 3.=expected result)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="matches(my oh my, my, true)">
+                  </a> <!-- matches(my oh my, my, true) -->
+                  <span class="method-name">matches</span>
+                  <span class="parameters">(my oh my, my, true)</span>
+                  <em>
+(requires setPattern is working! checks match results, arguments: 1.=tracktitle, 2.=pattern, 3.=expected result)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="matches(music is my life, my, false)">
+                  </a> <!-- matches(music is my life, my, false) -->
+                  <span class="method-name">matches</span>
+                  <span class="parameters">(music is my life, my, false)</span>
+                  <em>
+(requires setPattern is working! checks match results, arguments: 1.=tracktitle, 2.=pattern, 3.=expected result)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPatternAny">
+                  </a> <!-- setPatternAny -->
+                  <span class="method-name">setPatternAny</span>
+                  <em>
+(tries to set a valid pattern - music)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPatternNull">
+                  </a> <!-- setPatternNull -->
+                  <span class="method-name">setPatternNull</span>
+                  <em>
+(tries to set a null pattern)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testtoString">
+                  </a> <!-- testtoString -->
+                  <span class="method-name">testtoString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Денис\AppData\Local\Temp\testng-eclipse--1479975771\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;MusicLandscape.container.MyTrackContainer&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.entities.Track&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.tests.ShortTrackFormatterTest&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.entities.Release&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.entities.DemoApp&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.util.formatters.ShortTrackFormatter&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.Venue&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.tests.DurationComparatorTest&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.util.matcher.DurationMatcher&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.Date&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.entities.TVShow&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.tests.MyTrackContainerTest&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.util.formatters.CSVTrackFormatter&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.util.MyMatcher&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.tests.ArtistTest&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.util.comparators.WriterComparator&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.tests.DurationMatcherTest&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.util.comparators.DurationComparator&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.entities.Event&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.tests.TitleComparatorTest&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.tests.WriterComparatorTest&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.entities.Artist&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.util.comparators.TitleComparator&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.entities.Concert&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.entities.MusicVideo&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.tests.TitleMatcherTest&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.util.MyFormatter&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.util.ConsoleScanable&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.entities.Album&quot;/&gt;
+      &lt;class name=&quot;MusicLandscape.util.matcher.TitleMatcher&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (30 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(57);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'matches')
+data.setCell(0, 2, 'MusicLandscape.tests.TitleMatcherTest')
+data.setCell(0, 3, 12);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'DurationMatcherString')
+data.setCell(1, 2, 'MusicLandscape.tests.DurationMatcherTest')
+data.setCell(1, 3, 7);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkInterface')
+data.setCell(2, 2, 'MusicLandscape.tests.ShortTrackFormatterTest')
+data.setCell(2, 3, 7);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'sort')
+data.setCell(3, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(3, 3, 7);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'topSeparator')
+data.setCell(4, 2, 'MusicLandscape.tests.ShortTrackFormatterTest')
+data.setCell(4, 3, 6);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'MyTrackContainerTrack')
+data.setCell(5, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(5, 3, 4);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'compareTo')
+data.setCell(6, 2, 'MusicLandscape.tests.ArtistTest')
+data.setCell(6, 3, 4);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'formatLongTrack')
+data.setCell(7, 2, 'MusicLandscape.tests.ShortTrackFormatterTest')
+data.setCell(7, 3, 4);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getPattern')
+data.setCell(8, 2, 'MusicLandscape.tests.DurationMatcherTest')
+data.setCell(8, 3, 3);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'setPattern')
+data.setCell(9, 2, 'MusicLandscape.tests.DurationMatcherTest')
+data.setCell(9, 3, 3);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'add')
+data.setCell(10, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(10, 3, 3);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addAll')
+data.setCell(11, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(11, 3, 3);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'setPattern')
+data.setCell(12, 2, 'MusicLandscape.tests.DurationMatcherTest')
+data.setCell(12, 3, 3);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'checkType')
+data.setCell(13, 2, 'MusicLandscape.tests.TitleComparatorTest')
+data.setCell(13, 3, 3);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkType')
+data.setCell(14, 2, 'MusicLandscape.tests.WriterComparatorTest')
+data.setCell(14, 3, 2);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'setPattern')
+data.setCell(15, 2, 'MusicLandscape.tests.DurationMatcherTest')
+data.setCell(15, 3, 2);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'filter')
+data.setCell(16, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(16, 3, 2);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'compare')
+data.setCell(17, 2, 'MusicLandscape.tests.DurationComparatorTest')
+data.setCell(17, 3, 2);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testtoString')
+data.setCell(18, 2, 'MusicLandscape.tests.DurationComparatorTest')
+data.setCell(18, 3, 2);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'removeAll')
+data.setCell(19, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(19, 3, 2);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TitleMatcher')
+data.setCell(20, 2, 'MusicLandscape.tests.TitleMatcherTest')
+data.setCell(20, 3, 2);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'matches')
+data.setCell(21, 2, 'MusicLandscape.tests.TitleMatcherTest')
+data.setCell(21, 3, 2);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'compare')
+data.setCell(22, 2, 'MusicLandscape.tests.DurationComparatorTest')
+data.setCell(22, 3, 2);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'setPattern')
+data.setCell(23, 2, 'MusicLandscape.tests.DurationMatcherTest')
+data.setCell(23, 3, 2);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'matches')
+data.setCell(24, 2, 'MusicLandscape.tests.DurationMatcherTest')
+data.setCell(24, 3, 2);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'compare')
+data.setCell(25, 2, 'MusicLandscape.tests.DurationComparatorTest')
+data.setCell(25, 3, 2);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'MyTrackContainerIterableTrack')
+data.setCell(26, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(26, 3, 2);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testtoString')
+data.setCell(27, 2, 'MusicLandscape.tests.DurationMatcherTest')
+data.setCell(27, 3, 2);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'formatShortTrack')
+data.setCell(28, 2, 'MusicLandscape.tests.ShortTrackFormatterTest')
+data.setCell(28, 3, 2);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'compare')
+data.setCell(29, 2, 'MusicLandscape.tests.TitleComparatorTest')
+data.setCell(29, 3, 1);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'compare')
+data.setCell(30, 2, 'MusicLandscape.tests.TitleComparatorTest')
+data.setCell(30, 3, 1);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'MyTrackContainer')
+data.setCell(31, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(31, 3, 1);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'compare')
+data.setCell(32, 2, 'MusicLandscape.tests.TitleComparatorTest')
+data.setCell(32, 3, 1);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'checkType')
+data.setCell(33, 2, 'MusicLandscape.tests.DurationComparatorTest')
+data.setCell(33, 3, 1);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testtoString')
+data.setCell(34, 2, 'MusicLandscape.tests.TitleMatcherTest')
+data.setCell(34, 3, 1);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'matches')
+data.setCell(35, 2, 'MusicLandscape.tests.DurationMatcherTest')
+data.setCell(35, 3, 1);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'compare')
+data.setCell(36, 2, 'MusicLandscape.tests.WriterComparatorTest')
+data.setCell(36, 3, 1);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'compare')
+data.setCell(37, 2, 'MusicLandscape.tests.WriterComparatorTest')
+data.setCell(37, 3, 1);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'compareTo')
+data.setCell(38, 2, 'MusicLandscape.tests.ArtistTest')
+data.setCell(38, 3, 1);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'reset')
+data.setCell(39, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(39, 3, 1);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'selectionInit')
+data.setCell(40, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(40, 3, 1);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'setPatternAny')
+data.setCell(41, 2, 'MusicLandscape.tests.TitleMatcherTest')
+data.setCell(41, 3, 1);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'compare')
+data.setCell(42, 2, 'MusicLandscape.tests.WriterComparatorTest')
+data.setCell(42, 3, 1);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'DurationMatcher')
+data.setCell(43, 2, 'MusicLandscape.tests.DurationMatcherTest')
+data.setCell(43, 3, 1);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'testtoString')
+data.setCell(44, 2, 'MusicLandscape.tests.TitleComparatorTest')
+data.setCell(44, 3, 1);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'compareTo')
+data.setCell(45, 2, 'MusicLandscape.tests.ArtistTest')
+data.setCell(45, 3, 1);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'selection')
+data.setCell(46, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(46, 3, 1);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'matches')
+data.setCell(47, 2, 'MusicLandscape.tests.TitleMatcherTest')
+data.setCell(47, 3, 1);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'remove')
+data.setCell(48, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(48, 3, 1);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'setPatternNull')
+data.setCell(49, 2, 'MusicLandscape.tests.TitleMatcherTest')
+data.setCell(49, 3, 1);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'matches')
+data.setCell(50, 2, 'MusicLandscape.tests.DurationMatcherTest')
+data.setCell(50, 3, 1);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testtoString')
+data.setCell(51, 2, 'MusicLandscape.tests.ShortTrackFormatterTest')
+data.setCell(51, 3, 1);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'header')
+data.setCell(52, 2, 'MusicLandscape.tests.ShortTrackFormatterTest')
+data.setCell(52, 3, 1);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'checkInterface')
+data.setCell(53, 2, 'MusicLandscape.tests.ArtistTest')
+data.setCell(53, 3, 1);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'size')
+data.setCell(54, 2, 'MusicLandscape.tests.MyTrackContainerTest')
+data.setCell(54, 3, 0);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'getPattern')
+data.setCell(55, 2, 'MusicLandscape.tests.TitleMatcherTest')
+data.setCell(55, 3, 0);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'testtoString')
+data.setCell(56, 2, 'MusicLandscape.tests.WriterComparatorTest')
+data.setCell(56, 3, 0);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 124 ms</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">MusicLandscape.tests.ShortTrackFormatterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkInterface</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">21 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">formatLongTrack</span>
+                <span class="method-start">21 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">formatShortTrack</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">44 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">header</span>
+                <span class="method-start">45 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testtoString</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">topSeparator</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MusicLandscape.tests.DurationComparatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkType</span>
+                <span class="method-start">60 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compare(60, 60, 0)</span>
+                <span class="method-start">69 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compare(120, 60, 60)</span>
+                <span class="method-start">72 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compare(60, 120, -60)</span>
+                <span class="method-start">75 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testtoString</span>
+                <span class="method-start">78 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MusicLandscape.tests.MyTrackContainerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">MyTrackContainer</span>
+                <span class="method-start">81 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MyTrackContainerIterableTrack</span>
+                <span class="method-start">83 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">add</span>
+                <span class="method-start">91 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addAll</span>
+                <span class="method-start">95 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">filter</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeAll</span>
+                <span class="method-start">106 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selection</span>
+                <span class="method-start">110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectionInit</span>
+                <span class="method-start">113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MyTrackContainerTrack</span>
+                <span class="method-start">116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sort</span>
+                <span class="method-start">124 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MusicLandscape.tests.ArtistTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkInterface</span>
+                <span class="method-start">138 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compareTo(same, same, 0)</span>
+                <span class="method-start">140 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compareTo(same, other, 4)</span>
+                <span class="method-start">145 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compareTo(other, same, -4)</span>
+                <span class="method-start">153 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MusicLandscape.tests.DurationMatcherTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">160 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DurationMatcher</span>
+                <span class="method-start">160 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">169 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DurationMatcherString</span>
+                <span class="method-start">173 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getPattern</span>
+                <span class="method-start">183 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">189 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">matches(0, 0 0, true)</span>
+                <span class="method-start">190 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">194 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">matches(120, 0 0, false)</span>
+                <span class="method-start">196 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">203 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">matches(120, 0 300, true)</span>
+                <span class="method-start">203 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">206 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setPattern(1 200, 1, 200)</span>
+                <span class="method-start">207 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">220 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setPattern(incorr string, 0, 2147483647)</span>
+                <span class="method-start">220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">230 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setPattern(15 2, 15, 2147483647)</span>
+                <span class="method-start">233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setPattern(15 15, 15, 15)</span>
+                <span class="method-start">241 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testtoString</span>
+                <span class="method-start">250 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MusicLandscape.tests.TitleComparatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkType</span>
+                <span class="method-start">255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compare(same, same, 0)</span>
+                <span class="method-start">262 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compare(same, other, 4)</span>
+                <span class="method-start">271 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compare(other, same, -4)</span>
+                <span class="method-start">277 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testtoString</span>
+                <span class="method-start">280 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MusicLandscape.tests.TitleMatcherTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">282 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TitleMatcher</span>
+                <span class="method-start">282 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">285 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getPattern</span>
+                <span class="method-start">286 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">311 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">matches(my oh my, my, true)</span>
+                <span class="method-start">311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">314 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">matches(music is my life, my, false)</span>
+                <span class="method-start">314 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">321 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">matches(any title, , true)</span>
+                <span class="method-start">321 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">335 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setPatternAny</span>
+                <span class="method-start">335 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setPatternNull</span>
+                <span class="method-start">338 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">342 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testtoString</span>
+                <span class="method-start">342 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MusicLandscape.tests.MyTrackContainerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">remove</span>
+                <span class="method-start">348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reset</span>
+                <span class="method-start">355 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MusicLandscape.tests.WriterComparatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkType</span>
+                <span class="method-start">363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compare(same, same, 0)</span>
+                <span class="method-start">369 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compare(same, other, 4)</span>
+                <span class="method-start">374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">compare(other, same, -4)</span>
+                <span class="method-start">383 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testtoString</span>
+                <span class="method-start">385 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MusicLandscape.tests.MyTrackContainerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">size</span>
+                <span class="method-start">390 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

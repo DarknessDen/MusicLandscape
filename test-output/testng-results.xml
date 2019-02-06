@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" ignored="0" total="57" passed="52">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="414" started-at="2019-02-06T15:30:41Z" finished-at="2019-02-06T15:30:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="414" started-at="2019-02-06T15:30:41Z" finished-at="2019-02-06T15:30:42Z">
+      <class name="MusicLandscape.tests.DurationComparatorTest">
+        <test-method status="PASS" signature="checkType()[pri:0, instance:MusicLandscape.tests.DurationComparatorTest@224edc67]" name="checkType" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="checks if the interface java.util.Comparator has been used" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkType -->
+        <test-method status="PASS" signature="compare(int, int, int)[pri:0, instance:MusicLandscape.tests.DurationComparatorTest@224edc67]" name="compare" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="checks if comparison is done correctly " data-provider="duration" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compare -->
+        <test-method status="PASS" signature="compare(int, int, int)[pri:0, instance:MusicLandscape.tests.DurationComparatorTest@224edc67]" name="compare" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="checks if comparison is done correctly " data-provider="duration" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[120]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compare -->
+        <test-method status="PASS" signature="compare(int, int, int)[pri:0, instance:MusicLandscape.tests.DurationComparatorTest@224edc67]" name="compare" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="checks if comparison is done correctly " data-provider="duration" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[120]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-60]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compare -->
+        <test-method status="PASS" signature="testtoString()[pri:0, instance:MusicLandscape.tests.DurationComparatorTest@224edc67]" name="testtoString" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="checks return value of toString" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testtoString -->
+      </class> <!-- MusicLandscape.tests.DurationComparatorTest -->
+      <class name="MusicLandscape.tests.ArtistTest">
+        <test-method status="FAIL" signature="checkInterface()[pri:0, instance:MusicLandscape.tests.ArtistTest@4501b7af]" name="checkInterface" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="checks if Artist implements interface" finished-at="2019-02-06T15:30:42Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[the class should implement the interface  expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: the class should implement the interface  expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at MusicLandscape.tests.ArtistTest.checkInterface(ArtistTest.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkInterface -->
+        <test-method status="PASS" signature="compareTo(java.lang.String, java.lang.String, int)[pri:0, instance:MusicLandscape.tests.ArtistTest@4501b7af]" name="compareTo" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="checks if comparison is done lexicographically" data-provider="name" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareTo -->
+        <test-method status="PASS" signature="compareTo(java.lang.String, java.lang.String, int)[pri:0, instance:MusicLandscape.tests.ArtistTest@4501b7af]" name="compareTo" duration-ms="4" started-at="2019-02-06T15:30:42Z" description="checks if comparison is done lexicographically" data-provider="name" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[other]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareTo -->
+        <test-method status="PASS" signature="compareTo(java.lang.String, java.lang.String, int)[pri:0, instance:MusicLandscape.tests.ArtistTest@4501b7af]" name="compareTo" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="checks if comparison is done lexicographically" data-provider="name" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[other]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareTo -->
+      </class> <!-- MusicLandscape.tests.ArtistTest -->
+      <class name="MusicLandscape.tests.ShortTrackFormatterTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="init" is-config="true" duration-ms="6" started-at="2019-02-06T15:30:41Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="checkInterface()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="checkInterface" duration-ms="7" started-at="2019-02-06T15:30:42Z" description="checks if ShortTrackFormatter implements correct interface" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkInterface -->
+        <test-method status="FAIL" signature="formatLongTrack()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="formatLongTrack" duration-ms="4" started-at="2019-02-06T15:30:42Z" description="checks format of a track with a long title using format()" finished-at="2019-02-06T15:30:42Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Strings should be equal expected [Ain't No S (06:00)] but found [unknown(6:0)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Strings should be equal expected [Ain't No S (06:00)] but found [unknown(6:0)]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at MusicLandscape.tests.ShortTrackFormatterTest.formatLongTrack(ShortTrackFormatterTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formatLongTrack -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="formatShortTrack()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="formatShortTrack" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="formats a track with a short title using format()" finished-at="2019-02-06T15:30:42Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Strings should be equal expected [Daylight   (02:03)] but found [unknown(2:3)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Strings should be equal expected [Daylight   (02:03)] but found [unknown(2:3)]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at MusicLandscape.tests.ShortTrackFormatterTest.formatShortTrack(ShortTrackFormatterTest.java:57)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- formatShortTrack -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="init" is-config="true" duration-ms="1" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="header()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="header" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="checks return value of header()" finished-at="2019-02-06T15:30:42Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[header() should return another value expected [Title      (min:sec)] but found [Title    (min:sec)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: header() should return another value expected [Title      (min:sec)] but found [Title    (min:sec)]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at MusicLandscape.tests.ShortTrackFormatterTest.header(ShortTrackFormatterTest.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- header -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testtoString()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="testtoString" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="checks return value of toString()" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testtoString -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="init" is-config="true" duration-ms="1" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="topSeparator()[pri:0, instance:MusicLandscape.tests.ShortTrackFormatterTest@4c70fda8]" name="topSeparator" duration-ms="6" started-at="2019-02-06T15:30:42Z" description="checks return value of topSeparator()" finished-at="2019-02-06T15:30:42Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[topSeparator() should return another value expected [--------------------] but found [----------------------]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: topSeparator() should return another value expected [--------------------] but found [----------------------]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at MusicLandscape.tests.ShortTrackFormatterTest.topSeparator(ShortTrackFormatterTest.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- topSeparator -->
+      </class> <!-- MusicLandscape.tests.ShortTrackFormatterTest -->
+      <class name="MusicLandscape.tests.DurationMatcherTest">
+        <test-method status="PASS" signature="DurationMatcher()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="DurationMatcher" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="tests the constructor of DurationMatcher without arguments" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DurationMatcher -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="init" is-config="true" duration-ms="4" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="DurationMatcherString()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="DurationMatcherString" duration-ms="7" started-at="2019-02-06T15:30:42Z" description="tests the cosntructor which takes a pattern as String with value &quot;2 5&quot;" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DurationMatcherString -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="init" is-config="true" duration-ms="1" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="getPattern()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="getPattern" duration-ms="3" started-at="2019-02-06T15:30:42Z" description="test the return value of getPattern()" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPattern -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="init" is-config="true" duration-ms="1" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="matches(int, java.lang.String, boolean)[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="matches" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="requires setPattern works! checks if matching is done correctly. first argument: druations of track, second: pattern to match, third: awaited result" data-provider="matchpatterns" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0 0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matches -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="init" is-config="true" duration-ms="1" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="matches(int, java.lang.String, boolean)[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="matches" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="requires setPattern works! checks if matching is done correctly. first argument: druations of track, second: pattern to match, third: awaited result" data-provider="matchpatterns" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[120]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0 0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matches -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="matches(int, java.lang.String, boolean)[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="matches" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="requires setPattern works! checks if matching is done correctly. first argument: druations of track, second: pattern to match, third: awaited result" data-provider="matchpatterns" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[120]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0 300]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matches -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="init" is-config="true" duration-ms="1" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setPattern(java.lang.String, int, int)[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="setPattern" duration-ms="3" started-at="2019-02-06T15:30:42Z" description="sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in)" data-provider="patterns" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1 200]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPattern -->
+        <test-method status="PASS" signature="setPattern(java.lang.String, int, int)[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="setPattern" duration-ms="3" started-at="2019-02-06T15:30:42Z" description="sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in)" data-provider="patterns" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorr string]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2147483647]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPattern -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="init" is-config="true" duration-ms="1" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setPattern(java.lang.String, int, int)[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="setPattern" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in)" data-provider="patterns" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15 2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2147483647]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPattern -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="init" is-config="true" duration-ms="1" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setPattern(java.lang.String, int, int)[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="setPattern" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="sets the pattern to the given String, variables u and l are the awaited values of the Matcher after using setPattern(in)" data-provider="patterns" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15 15]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPattern -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testtoString()[pri:0, instance:MusicLandscape.tests.DurationMatcherTest@523884b2]" name="testtoString" duration-ms="2" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testtoString -->
+      </class> <!-- MusicLandscape.tests.DurationMatcherTest -->
+      <class name="MusicLandscape.tests.TitleMatcherTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="TitleMatcher()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="TitleMatcher" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="checks initial value of TitleMatcher with constructor TitleMatcher (&quot;my&quot;)" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TitleMatcher -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="init" is-config="true" duration-ms="1" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="getPattern()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="getPattern" duration-ms="0" started-at="2019-02-06T15:30:42Z" description="checks return value of getPattern()" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPattern -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="matches(java.lang.String, java.lang.String, boolean)[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="matches" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="requires setPattern is working! checks match results, arguments: 1.=tracktitle, 2.=pattern, 3.=expected result" data-provider="matchpatterns" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[my oh my]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[my]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matches -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="matches(java.lang.String, java.lang.String, boolean)[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="matches" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="requires setPattern is working! checks match results, arguments: 1.=tracktitle, 2.=pattern, 3.=expected result" data-provider="matchpatterns" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[music is my life]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[my]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matches -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="matches(java.lang.String, java.lang.String, boolean)[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="matches" duration-ms="12" started-at="2019-02-06T15:30:42Z" description="requires setPattern is working! checks match results, arguments: 1.=tracktitle, 2.=pattern, 3.=expected result" data-provider="matchpatterns" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[any title]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- matches -->
+        <test-method status="PASS" signature="setPatternAny()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="setPatternAny" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="tries to set a valid pattern - music" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPatternAny -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setPatternNull()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="setPatternNull" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="tries to set a null pattern" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPatternNull -->
+        <test-method status="PASS" signature="init()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="init" is-config="true" duration-ms="0" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testtoString()[pri:0, instance:MusicLandscape.tests.TitleMatcherTest@29774679]" name="testtoString" duration-ms="1" started-at="2019-02-06T15:30:42Z" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testtoString -->
+      </class> <!-- MusicLandscape.tests.TitleMatcherTest -->
+      <class name="MusicLandscape.tests.MyTrackContainerTest">
+        <test-method status="PASS" signature="MyTrackContainer()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="MyTrackContainer" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="checks if initial datatypes are correct" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyTrackContainer -->
+        <test-method status="PASS" signature="MyTrackContainerIterableTrack()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="MyTrackContainerIterableTrack" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="checks if initial length of tracks and selection is correct with a List&lt;Track&gt; of 3 tracks" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyTrackContainerIterableTrack -->
+        <test-method status="PASS" signature="add()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="add" duration-ms="3" started-at="2019-02-06T15:30:42Z" description="test to add the same track twice as well as a null track" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="addAll()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="addAll" duration-ms="3" started-at="2019-02-06T15:30:42Z" description="test to add an array with 3 track to the tracks" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAll -->
+        <test-method status="PASS" signature="filter()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="filter" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="test filter method using the title matcher with pattern &quot;t&quot; or &quot;Spe&quot; " finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filter -->
+        <test-method status="PASS" signature="removeAll()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="removeAll" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="check remove() for complete selection (all available Tracks)" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeAll -->
+        <test-method status="PASS" signature="selection()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="selection" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="checks return value of selection() with an empty selection" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selection -->
+        <test-method status="PASS" signature="selectionInit()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="selectionInit" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="checks return value of selection() with an empty selection" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectionInit -->
+        <test-method status="PASS" signature="MyTrackContainerTrack()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="MyTrackContainerTrack" duration-ms="4" started-at="2019-02-06T15:30:42Z" description="checks if initial lenght of tracks and selection is correct with a Track[] of 3 tracks" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyTrackContainerTrack -->
+        <test-method status="PASS" signature="sort()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="sort" duration-ms="7" started-at="2019-02-06T15:30:42Z" description="sorts the selection by a given Comparator (by duration in this case)" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sort -->
+        <test-method status="PASS" signature="remove()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="remove" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="check remove() for filtered selection (all available Tracks)" depends-on-methods="MusicLandscape.tests.MyTrackContainerTest.filter" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remove -->
+        <test-method status="PASS" signature="reset()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="reset" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="check reset() after adding new Tracks" depends-on-methods="MusicLandscape.tests.MyTrackContainerTest.add" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reset -->
+        <test-method status="PASS" signature="size()[pri:0, instance:MusicLandscape.tests.MyTrackContainerTest@14acaea5]" name="size" duration-ms="0" started-at="2019-02-06T15:30:42Z" description="check size() after removing Track from selection to make sure it returns size of tracks not of selection" depends-on-methods="MusicLandscape.tests.MyTrackContainerTest.remove" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- size -->
+      </class> <!-- MusicLandscape.tests.MyTrackContainerTest -->
+      <class name="MusicLandscape.tests.TitleComparatorTest">
+        <test-method status="PASS" signature="checkType()[pri:0, instance:MusicLandscape.tests.TitleComparatorTest@5b275dab]" name="checkType" duration-ms="3" started-at="2019-02-06T15:30:42Z" description="checks if the interface java.util.Comparator has been used" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkType -->
+        <test-method status="PASS" signature="compare(java.lang.String, java.lang.String, int)[pri:0, instance:MusicLandscape.tests.TitleComparatorTest@5b275dab]" name="compare" duration-ms="1" started-at="2019-02-06T15:30:42Z" data-provider="title" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compare -->
+        <test-method status="PASS" signature="compare(java.lang.String, java.lang.String, int)[pri:0, instance:MusicLandscape.tests.TitleComparatorTest@5b275dab]" name="compare" duration-ms="1" started-at="2019-02-06T15:30:42Z" data-provider="title" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[other]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compare -->
+        <test-method status="PASS" signature="compare(java.lang.String, java.lang.String, int)[pri:0, instance:MusicLandscape.tests.TitleComparatorTest@5b275dab]" name="compare" duration-ms="1" started-at="2019-02-06T15:30:42Z" data-provider="title" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[other]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compare -->
+        <test-method status="PASS" signature="testtoString()[pri:0, instance:MusicLandscape.tests.TitleComparatorTest@5b275dab]" name="testtoString" duration-ms="1" started-at="2019-02-06T15:30:42Z" description="checks return value of toString" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testtoString -->
+      </class> <!-- MusicLandscape.tests.TitleComparatorTest -->
+      <class name="MusicLandscape.tests.WriterComparatorTest">
+        <test-method status="PASS" signature="checkType()[pri:0, instance:MusicLandscape.tests.WriterComparatorTest@61832929]" name="checkType" duration-ms="2" started-at="2019-02-06T15:30:42Z" description="checks if the interface java.util.Comparator has been used" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkType -->
+        <test-method status="PASS" signature="compare(java.lang.String, java.lang.String, int)[pri:0, instance:MusicLandscape.tests.WriterComparatorTest@61832929]" name="compare" duration-ms="1" started-at="2019-02-06T15:30:42Z" data-provider="name" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compare -->
+        <test-method status="PASS" signature="compare(java.lang.String, java.lang.String, int)[pri:0, instance:MusicLandscape.tests.WriterComparatorTest@61832929]" name="compare" duration-ms="1" started-at="2019-02-06T15:30:42Z" data-provider="name" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[other]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compare -->
+        <test-method status="PASS" signature="compare(java.lang.String, java.lang.String, int)[pri:0, instance:MusicLandscape.tests.WriterComparatorTest@61832929]" name="compare" duration-ms="1" started-at="2019-02-06T15:30:42Z" data-provider="name" finished-at="2019-02-06T15:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[other]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[same]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compare -->
+        <test-method status="PASS" signature="testtoString()[pri:0, instance:MusicLandscape.tests.WriterComparatorTest@61832929]" name="testtoString" duration-ms="0" started-at="2019-02-06T15:30:42Z" description="checks return value of toString" finished-at="2019-02-06T15:30:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testtoString -->
+      </class> <!-- MusicLandscape.tests.WriterComparatorTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
